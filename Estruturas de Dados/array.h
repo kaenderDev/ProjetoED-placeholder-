@@ -16,6 +16,5 @@ void* array_get_ptr(Array* arr, size_t index);          // pega o ponteiro do el
 void array_free(Array* arr);                            // libera a memoria
 
 
-#define ARRAY_GET(type, arr, index) \
-        (*(type*)array_get_ptr(arr, index))   //typecast com macro 
+#define ARRAY_GET(type, arr, index) (*(type*)array_get_ptr(arr, index))   //typecast com macro 
 #endif         
